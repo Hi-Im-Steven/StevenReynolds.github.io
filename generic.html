@@ -6,6 +6,26 @@
 -->
 <html>
 	<head>
+		<head>
+		<style>
+			.image-container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+	
+			.image-container img {
+				max-width: 100%;
+				height: auto;
+			}
+	
+			/* Media query for smaller screens */
+			@media only screen and (max-width: 600px) {
+				.image-container {
+					flex-direction: column;
+				}
+			}
+		</style>
 		<title>Steven Reynolds Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -52,9 +72,9 @@
 						  In 2020 my wife and I got news that our first born was on the way! I quit deploying and started going to school where I ultimately got my AAS in Management Information Systems from Columbus State Community College. When im not working I'm hanging out with my wife and kid, traveling when we can and enjoying our adventure as a family. We love to go camping in Hocking Hills and also try to vacation to Hilton Head Island every year. 
 						  <br /> 
 						</p>
-						<div class="image-container" style="display: flex; justify-content: left; align-items: left;">
-							<img src="images/header.jpg" alt="Your Image" style="max-width: 185%; height: auto;">
-						</div>
+						<div class="image-container">
+							<img src="images/header.jpg" alt="Your Image">
+						  </div>
 						<hr />
 						<h4>Why Data Analytics?</h4>
 						<p>
